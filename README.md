@@ -36,11 +36,11 @@ Users should be able to:
 
 ***Mobile***
 
-<img src="./public/screen-mobile.png" width="800" height="800" /> 
+<img src="./public/screen-mobile.png" width="800"/> 
 
 ***Desktop***
 
-<img src="./public/screen-desktop.png" width="800" height="800" /> 
+<img src="./public/screen-desktop.png" width="800" /> 
 
 ### Links
 

@@ -88,8 +88,12 @@ function App() {
   const clearCompleted = () => {
     const newTodoList = todoList.filter(todo => !todo.completed);
     setTodoList(newTodoList);
-    setTodoListRedered(newTodoList);
     setCompletedCounter(newTodoList.length);
+    if(filterSelected === "completed"){
+      setTodoListRedered([]);
+    } else {
+      setTodoListRedered(newTodoList);
+    }
   }
   const selectFilterAll = () => {
     setFilterSelected("all");

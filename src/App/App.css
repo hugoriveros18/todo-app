@@ -184,6 +184,7 @@
   width: 100%;
   min-height: 40px;
   background-color: hsl(235, 24%, 19%);
+  border-radius: 0 0 5px 5px;
 }
 .filterInCounterContainer{
   display: none;
