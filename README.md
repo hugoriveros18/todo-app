@@ -40,11 +40,8 @@ Users should be able to:
 
 ***Desktop***
 
-<<<<<<< HEAD
 <img src="./public/screen-desktop.png" width="800" /> 
-=======
-<img src="./public/screen-desktop.png" width="800"/> 
->>>>>>> d96d6c529d9323c8f9218687a2da1f0800e3fede
+
 
 ### Links
 
