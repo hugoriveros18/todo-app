@@ -1,0 +1,460 @@
+/* GENERAL APP */
+.App {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #161722;
+}
+.AppLight{
+  background-color: #fafafa;
+}
+
+
+
+/* HEADER */
+.headerContainer{
+  background-image: url(../app-images/bg-mobile-dark.jpg);
+  box-sizing: border-box;
+  width: 100%;
+  height: 27.5vh;
+  padding: 38px 24px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.headerBackgroundMoon{
+  background-image: url(../app-images//bg-mobile-light.jpg);
+}
+.logo-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 1.65rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: #ffffff;
+}
+.logo-container img{
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+}
+.inputContainer{
+  display: flex;
+  width: 100%;
+  height: 48px;
+  margin-top: 33px;
+  border-radius: 5px;
+  background-color: hsl(235, 24%, 19%);
+}
+.inputContainerLight{
+  background-color: #ffffff;
+}
+.checkboxContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 12.3%;
+  height: 100%;
+}
+.checkboxContainer button{
+  appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: inherit;
+  border: solid 1px hsl(237, 14%, 26%);
+  background-image: url(../app-images/icon-add.svg);
+  background-position: center;
+  background-size: contain;
+}
+.checkboxContainer .checkboxButtonLight{
+  border: solid 1px #e3e3e6;
+}
+.textAreaContainer{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width: 87.7%;
+  height: 100%;
+}
+.textAreaContainer textarea{
+  width: 88%;
+  padding-top: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.73rem;
+  font-family: 'Josefin Sans', sans-serif;
+  color: hsl(234, 39%, 85%);
+  background: inherit;
+  border: none;
+  resize: none;
+}
+.textAreaContainer .textAreaLigth{
+  color: #50505c;
+}
+.textAreaContainer .textAreaLigth::placeholder{
+  color: #afaeb5;
+}
+.textAreaContainer textarea::placeholder{
+  color: hsl(233, 14%, 35%);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+/* MAIN */
+.mainContainer{
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0 24px;
+  background-color: hsl(235, 21%, 11%);
+}
+.mainContainerLight{
+  background-color: #fafafa;
+}
+.startTodosContainer{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.startTodosContainer img{
+  width: 100%;
+}
+.startTodosContainer p{
+  width: 90%;
+  margin-top: 30px;
+  line-height: 28px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(234, 39%, 85%);
+}
+.startTodosContainer .startTodoTextLight{
+  color: #50505c;
+}
+.todosContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+  height: auto;
+  background-color: hsl(233, 14%, 35%);
+  border-radius: 5px;
+  position: relative;
+  top: -30px;
+}
+.todosContainerLight{
+  background-color: #e9e8ec;
+  box-shadow: 8px 25px 40px 0px rgba(235,234,240,1);
+}
+.todosList{
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.todosCounter{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  width: 100%;
+  min-height: 40px;
+  background-color: hsl(235, 24%, 19%);
+}
+.filterInCounterContainer{
+  display: none;
+}
+.todoCounterLight{
+  background-color: #ffffff;
+}
+.todoCounterLight .todosCounterPLight{
+  color: #939298;
+}
+.todosCounter p{
+  color: hsl(233, 14%, 35%);
+  font-size: 0.75rem;
+}
+.filterContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -13px;
+  gap: 20px;
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background-color: hsl(235, 24%, 19%);
+}
+.filterContainerLight{
+  background-color: #ffffff;
+  box-shadow: 8px 15px 40px 0px rgba(235,234,240,1);
+}
+.filterOption{
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: hsl(233, 14%, 35%);
+}
+.filterOptionLight{
+  color: #aeafb9;
+}
+.filterOptionSelected{
+  color: #376bd7;
+}
+.dragDropContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+.dragDropContainer div{
+  width: 85%;
+  height: 40px;
+  text-align: center;
+  background-color: #141622;
+}
+.dragDropContainer .dragDropContainerLight{
+  background-color: #f7f6f9;
+}
+.dragDropContainer div p{
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #3a3b4a;
+  margin-top: 10px;
+}
+.dragDropContainer div .dragDropTextLight{
+  color: #9c9da3;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  /* HEADER */
+  .headerContainer{
+    height: 250px;
+    padding: 50px 430px 0;
+    background-image: url(../app-images/bg-desktop-dark.jpg);
+  }
+  .headerBackgroundMoon{
+    background-image: url(../app-images/bg-desktop-light.jpg);
+  }
+  .logo-container p {
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+  }
+  .logo-container img{
+    width: 26px;
+    height: 26px;
+  }
+  .inputContainer{
+    height: 65px;
+    margin-top: 38px;
+  }
+  .checkboxContainer{
+    width: 10%;
+  }
+  .checkboxContainer button{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+  }
+  .textAreaContainer {
+    width: 90%;
+    margin-left: 23px;
+  }
+  .textAreaContainer textarea{
+    width: 95%;
+    padding: 20px 0 0 0;
+    font-size: 1.1rem;
+  }
+  .textAreaContainer textarea::placeholder{
+    font-size: 1.1rem;
+  } 
+  /* MAIN  */
+  .mainContainer{
+    padding: 0 430px;
+  }
+  .todosContainer{
+    top: -15px;
+  }
+  .filterContainer{
+    display: none;
+  }
+  .filterInCounterContainer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .todosCounter .filterInCounterContainer p{
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  .todosCounter .filterInCounterContainer p:hover{
+    color: #f6f6f5;
+  }
+  .todosCounter .filterInCounterContainer .filterOptionSelected{
+    color: #376bd7;
+  }
+  .todosCounter .filterInCounterContainer .filterOptionSelected:hover{
+    color: #376bd7;
+  }
+  .clearCompleted:hover{
+    color: #c1c4d7;
+    cursor: pointer;
+  }
+  .filterInCounterContainer p{
+    font-size: 0.95rem;
+  }
+  .todosCounter{
+    height: 50px;
+  }
+  .todosCounter p{
+    font-size: 0.85rem;
+    color: #5a5c75;
+  }
+  .dragDropContainer{
+    top: 0px;
+    margin: 10px 0;
+    height: 40px;
+  }
+  .dragDropContainer div p{
+    color: #4c4d61;
+    font-size: 0.88rem;
+  }
+  .startTodosContainer{
+    margin-top: 5px;
+  }
+  .startTodosContainer p{
+    margin-top: 5px;
+  }
+  .startTodosContainer img{
+    width: 58%;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  /* HEADER */
+  .headerContainer{
+    height: 300px;
+    padding: 68px 430px 0;
+    background-image: url(../app-images/bg-desktop-dark.jpg);
+  }
+  .headerBackgroundMoon{
+    background-image: url(../app-images/bg-desktop-light.jpg);
+  }
+  .logo-container p {
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+  }
+  .logo-container img{
+    width: 26px;
+    height: 26px;
+  }
+  .inputContainer{
+    height: 65px;
+    margin-top: 38px;
+  }
+  .checkboxContainer{
+    width: 10%;
+  }
+  .checkboxContainer button{
+    width: 26px;
+    height: 26px;
+  }
+  .textAreaContainer {
+    width: 90%;
+    margin-left: 23px;
+  }
+  .textAreaContainer textarea{
+    width: 95%;
+    padding: 20px 0 0 0;
+    font-size: 1.1rem;
+  }
+  .textAreaContainer textarea::placeholder{
+    font-size: 1.1rem;
+  } 
+  /* MAIN  */
+  .mainContainer{
+    padding: 0 430px;
+  }
+  .todosContainer{
+    top: -55px;
+  }
+  .filterContainer{
+    display: none;
+  }
+  .filterInCounterContainer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .todosCounter .filterInCounterContainer p{
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  .todosCounter .filterInCounterContainer p:hover{
+    color: #f6f6f5;
+  }
+  .todosCounter .filterInCounterContainer .filterOptionSelected{
+    color: #376bd7;
+  }
+  .todosCounter .filterInCounterContainer .filterOptionSelected:hover{
+    color: #376bd7;
+  }
+  .clearCompleted:hover{
+    color: #c1c4d7;
+    cursor: pointer;
+  }
+  .filterInCounterContainer p{
+    font-size: 0.95rem;
+  }
+  .todosCounter{
+    height: 50px;
+  }
+  .todosCounter p{
+    font-size: 0.85rem;
+    color: #5a5c75;
+  }
+  .dragDropContainer{
+    top: -25px;
+    height: 60px;
+  }
+  .dragDropContainer div p{
+    color: #4c4d61;
+    font-size: 0.88rem;
+  }
+  .startTodosContainer p{
+    margin-top: 20px;
+  }
+  .startTodosContainer img{
+    width: 60%;
+  }
+}
