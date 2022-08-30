@@ -272,6 +272,7 @@
   .logo-container img{
     width: 26px;
     height: 26px;
+    cursor: pointer;
   }
   .inputContainer{
     height: 65px;
@@ -365,91 +366,14 @@
   .headerContainer{
     height: 300px;
     padding: 68px 430px 0;
-    background-image: url(../app-images/bg-desktop-dark.jpg);
   }
-  .headerBackgroundMoon{
-    background-image: url(../app-images/bg-desktop-light.jpg);
-  }
-  .logo-container p {
-    font-size: 2.5rem;
-    letter-spacing: 15px;
-  }
-  .logo-container img{
-    width: 26px;
-    height: 26px;
-  }
-  .inputContainer{
-    height: 65px;
-    margin-top: 38px;
-  }
-  .checkboxContainer{
-    width: 10%;
-  }
-  .checkboxContainer button{
-    width: 26px;
-    height: 26px;
-  }
-  .textAreaContainer {
-    width: 90%;
-    margin-left: 23px;
-  }
-  .textAreaContainer textarea{
-    width: 95%;
-    padding: 20px 0 0 0;
-    font-size: 1.1rem;
-  }
-  .textAreaContainer textarea::placeholder{
-    font-size: 1.1rem;
-  } 
   /* MAIN  */
-  .mainContainer{
-    padding: 0 430px;
-  }
   .todosContainer{
     top: -55px;
-  }
-  .filterContainer{
-    display: none;
-  }
-  .filterInCounterContainer{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  .todosCounter .filterInCounterContainer p{
-    font-size: 0.95rem;
-    cursor: pointer;
-  }
-  .todosCounter .filterInCounterContainer p:hover{
-    color: #f6f6f5;
-  }
-  .todosCounter .filterInCounterContainer .filterOptionSelected{
-    color: #376bd7;
-  }
-  .todosCounter .filterInCounterContainer .filterOptionSelected:hover{
-    color: #376bd7;
-  }
-  .clearCompleted:hover{
-    color: #c1c4d7;
-    cursor: pointer;
-  }
-  .filterInCounterContainer p{
-    font-size: 0.95rem;
-  }
-  .todosCounter{
-    height: 50px;
-  }
-  .todosCounter p{
-    font-size: 0.85rem;
-    color: #5a5c75;
   }
   .dragDropContainer{
     top: -25px;
     height: 60px;
-  }
-  .dragDropContainer div p{
-    color: #4c4d61;
-    font-size: 0.88rem;
   }
   .startTodosContainer p{
     margin-top: 20px;
